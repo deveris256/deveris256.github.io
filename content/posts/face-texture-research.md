@@ -3,6 +3,7 @@ title: 'Starfield face texture research'
 draft: false
 tags: ['research']
 date: 2024-08-08
+summary: This file contains information that proves Starfield face diffuse/albedo textures are limited in resolution.
 ---
 
 ### This file contains information that proves Starfield face diffuse/albedo textures are limited in resolution.

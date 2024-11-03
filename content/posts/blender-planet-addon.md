@@ -3,6 +3,7 @@ title: '(Experimental) Blender .biom addon'
 draft: false
 tags: ['projects']
 date: 2024-07-23
+summary: An addon for editing .biom files, allowing for changing the **resource** and **biome** placements, and swapping biomes.
 ---
 
 An addon for editing .biom files, allowing for changing the **resource** and **biome** placements, and swapping biomes.
