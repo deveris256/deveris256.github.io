@@ -1,0 +1,16 @@
+name = 'StarryField'
+license = 'MIT'
+licenselink = ''
+description = 'Nice starry theme'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/deveris256'
+
+# If you have a running demo of the theme
+demosite = 'https://github.com/deveris256'
+
+# If the theme has multiple authors
+authors = [
+  {name = 'Deveris', homepage = 'deveris256.github.io'},
+]
+

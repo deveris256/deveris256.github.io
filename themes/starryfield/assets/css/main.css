@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wdth,wght@75..100,400..900&display=swap');
+
+:root {
+  --border: 1px solid var(--line-color);
+  --text-color: #9dbabd;
+  --muted-text-color:rgba(157, 186, 189, 0.712);
+  --muted-text-color2: rgba(157, 186, 189, 0.4);
+  --dark-color: #0c0e0e;
+  --background-color: #161d1f;
+  --link-color: rgb(86, 161, 168);
+  --line-color: rgba(255, 255, 255, 0.11);
+  --text-glow-color: rgba(116, 180, 180, 0.932);
+  --transparent-1-color: rgba(116, 180, 180, 0.11);
+  --transparent-2-color: rgba(116, 180, 180, 0.05);
+}
+
+body {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  margin: 1rem auto auto auto;
+  max-width: 768px;
+  background-image: url("/gravdrive.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: var(--text-glow-color) 0px 0px 20px;
+}
+
+header {
+  border-bottom: var(--border);;
+  margin-bottom: 1rem;
+}
+
+footer {
+  border-top: 1.75px solid var(--line-color);
+  margin-top: 1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid var(--line-color);
+}
+
+/*
+Posts
+*/
+
+.post-title {
+  letter-spacing: 0.15em;
+  font-weight: 100;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 2px 2px 1px 0.7em;
+  background-color: var(--transparent-1-color);
+  border: var(--border);
+  box-shadow: 0px 10px 20px 0px var(--transparent-1-color);
+}
+
+.post-summary {
+  display: flex;
+  margin-top: 0;
+  padding: 0em 0 2em 1em;
+  background-color: var(--transparent-2-color);
+}
+
+.post-summary p {
+  margin-top: 1em;
+}
+
+.post-tags {
+  display: inline-block;
+  margin-left: auto;
+  width: 20%;
+  margin: 0 0 0 1em;
+  padding: 1em 3em 2em 1em;
+  background-color: var(--transparent-1-color);
+}
+
+time {
+  display: inline-block;
+  font-size: 13px;
+  padding: 0 0 0 1em;
+  border-left: var(--transparent-1-color) solid 10px;
+}
+
+/*
+Single post
+*/
+content h1, content h2, content h3, content h4, content h5, content h6 {
+  text-align: center;
+  font-weight: 100;
+  text-shadow: var(--text-glow-color) 0px 0px 20px;
+}
+
+content h1:before,
+content h2:before,
+content h3:before,
+content h4:before,
+content h5:before,
+content h6:before,
+content h1:after,
+content h2:after,
+content h3:after,
+content h4:after,
+content h5:after,
+content h6:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+ }
+
+content h1:before,
+content h2:before,
+content h3:before,
+content h4:before,
+content h5:before,
+content h6:before {
+  background: linear-gradient(-90deg, transparent, 5%, var(--muted-text-color2), 60%, transparent);
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+content h1:after,
+content h2:after,
+content h3:after,
+content h4:after,
+content h5:after,
+content h6:after {
+  background: linear-gradient(90deg, transparent, 5%, var(--muted-text-color2), 60%, transparent);
+  left: 0.5em;
+  margin-right: -50%;
+}
+/*
+Tags page
+*/
+.tag-title {
+  display: inline;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  font-weight: 100;
+  padding: 2px 3em 2px 1em;
+  background-color: var(--transparent-1-color);
+  border: var(--border);
+  width: 50%;
+}
+
+.tag-title:before {
+  content: "#";
+}
+
+/*
+Navigation menu
+*/
+
+.navmenu ul {
+  margin: 0;
+}
+
+.navmenu li {
+  float: right;
+  list-style-type: none;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  padding: 2px 3em 2px 1em;
+  background-color: var(--transparent-1-color);
+  border: var(--border);
+}
+
+.navmenu a {
+  text-decoration: none;
+  text-shadow: var(--text-glow-color) 0px 0px 20px;
+}
+
+/*
+Header
+*/
+
+.header-content {
+  color: var(--muted-text-color);
+  border-left: 2em solid var(--transparent-2-color);
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  text-shadow: var(--text-glow-color) 0px 0px 20px;
+}
+
+.site-title {
+  color: var(--muted-text-color) !important;
+  text-decoration: none !important;
+}

@@ -1,0 +1,6 @@
+{{ define "main" }}
+{{- partial "page-header.html" . -}}
+{{ range site.RegularPages }}
+  {{- partial "posts.html" . -}}
+{{end}}
+{{ end }}

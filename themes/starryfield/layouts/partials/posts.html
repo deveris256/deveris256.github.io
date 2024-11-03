@@ -1,0 +1,5 @@
+  <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  <div class="post-summary">
+    <p>{{ .Summary }}</p>
+    <div class="post-tags">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+  </div>

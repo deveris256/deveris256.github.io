@@ -1,0 +1,4 @@
+baseURL = "https://deveris256.github.io/"
+languageCode = "en-us"
+title = "Deveris"
+theme="starryfield"
